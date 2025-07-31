@@ -26,7 +26,7 @@ const VideoBackground = ({ id }) => {
 
   if (!trailerId) {
     return (
-      <div className="absolute top-0 left-0 w-full h-screen bg-black flex items-center justify-center text-white">
+      <div className="absolute top-0 left-0 w-full h-screen bg-[#141414] flex items-center justify-center text-white">
         Loading Video...
       </div>
     );
@@ -45,7 +45,7 @@ const VideoBackground = ({ id }) => {
     />
 
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent z-10" />
 
    
       <button

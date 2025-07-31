@@ -12,15 +12,18 @@ const MainContainer = () => {
   const { original_title, overview, id, logoUrl } = mainMovie;
 
   return (
-    <div className="overflow-hidden pb-10  bg-[#141414]">
-      <VideoBackground id={id} />
-      <VideoTitle
-        movieId={id}
-        title={logoUrl?.title || original_title}
-        logoUrl={logoUrl}
-        overview={overview}
-      />
-    </div>
+    <div className="overflow-hidden pb-0 sm:pb-10 -mt-4 bg-[#141414]">
+  <VideoBackground id={id} />
+  <VideoTitle
+    movieId={id}
+    title={logoUrl?.title || original_title}
+    logoUrl={logoUrl}
+    overview={overview}
+  />
+</div>
+
+
+    
   );
 };
 
