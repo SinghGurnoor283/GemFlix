@@ -3,7 +3,7 @@ import { getAuth, signOut } from "firebase/auth";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleGptSearchView } from './utils/GptSlice';
 import { changeLanguage } from './utils/configSlice';
-import LOGO from './assets/logo.png';
+import LOGO from './assets/Logo.png';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -40,7 +40,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-transparent transition-colors duration-300">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-row sm:flex-row justify-between items-center gap-4">
-          {/* Logo + Brand */}
+       
           <div className="flex items-center gap-2">
             {!isGptOpen && <img src={LOGO} alt="Gemflix Logo" className="lg:w-12 lg:h-12 w-10 h-10 object-contain" />}
             <h1 className="text-2xl lg:text-4xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 tracking-wide">
@@ -71,7 +71,7 @@ const Header = () => {
                 {isGptOpen ? "Home" : "Gem AI 🔍"}
               </button>
 
-              {/* Profile Dropdown */}
+             
               <div className="relative" ref={dropdownRef}>
                 <button onClick={toggleDropdown} className="focus:outline-none">
                   <div className="lg:w-11 lg:h-11 w-10 h-10 rounded-full bg-purple-700 text-white flex items-center justify-center text-lg font-bold border-2 border-purple-400 hover:border-pink-500 transition">

@@ -20,7 +20,7 @@ const Body = () => {
     return () => unsubscribe();
   }, [dispatch]);
 
-  return null; // just auth listener, no UI
+  return null; // just auth listener
 };
 
 export default Body;

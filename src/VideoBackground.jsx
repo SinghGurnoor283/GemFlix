@@ -7,7 +7,7 @@ const VideoBackground = ({ id }) => {
   const iframeRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
 
-  // ✅ Always call useEffect unconditionally
+  
   useEffect(() => {
     const iframe = iframeRef.current;
     if (!iframe) return;
@@ -24,7 +24,6 @@ const VideoBackground = ({ id }) => {
     setIsMuted((prev) => !prev);
   };
 
-  // Early return without hooks — ✅ safe
   if (!trailerId) {
     return (
       <div className="absolute top-0 left-0 w-full h-screen bg-black flex items-center justify-center text-white">
@@ -46,10 +45,9 @@ const VideoBackground = ({ id }) => {
     />
 
 
-      {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
 
-      {/* Speaker toggle button */}
+   
       <button
         onClick={toggleMute}
         className="absolute bottom-3 md:bottom-30 right-5 md:right-8 xl:right-12 bg-black/60 p-1 md:p-2 rounded-full text-white text-xl z-40 hover:bg-black/80 transition pointer-events-auto"

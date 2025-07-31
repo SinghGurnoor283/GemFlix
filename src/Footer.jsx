@@ -43,12 +43,11 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Service Code Button */}
       <button className="border border-gray-600 text-gray-400 px-4 py-1 mb-4 hover:text-white hover:border-white">
         Support Code
       </button>
 
-      {/* Copyright */}
+  
       <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Gemflix Inc. All rights reserved.</p>
     </footer>
   );

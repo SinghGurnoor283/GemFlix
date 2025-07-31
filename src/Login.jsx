@@ -97,7 +97,7 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-indigo-900 to-black px-4 py-10">
       <main className="w-full max-w-5xl bg-gray-900 bg-opacity-90 rounded-2xl shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-        {/* Branding */}
+        
         <section className="flex flex-col items-center justify-center text-center lg:text-left bg-gradient-to-br from-indigo-700 to-purple-700 p-10 space-y-4">
           <img src={LOGO} alt="Gemflix Logo" className="w-20 h-20 sm:w-24 sm:h-24" />
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white">Gemflix 🎬</h1>
@@ -107,7 +107,7 @@ const Login = () => {
           </p>
         </section>
 
-        {/* Form */}
+     
         <section className="p-8 sm:p-10 lg:p-12 bg-gray-800 flex flex-col justify-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 text-center">
             {isSignInForm ? 'Welcome Back!' : 'Create Account'}

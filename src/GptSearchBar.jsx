@@ -5,7 +5,7 @@ import lang from './utils/languageConstants';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { API_KEY, API_OPTIONS } from './utils/constants';
 import { addGptMoviesResult } from './utils/GptSlice';
-import logo from './assets/Logo.png'; // Make sure your logo path is correct
+import logo from './assets/Logo.png'; 
 
 const GptSearchBar = () => {
   const langKey = useSelector((store) => store.config.lang);

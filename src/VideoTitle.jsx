@@ -1,6 +1,6 @@
-// components/VideoTitle.js
+
 import { useSelector } from "react-redux";
-import useMovieLogo from "./Hooks/useMovieLogo"; // adjust path if needed
+import useMovieLogo from "./Hooks/useMovieLogo"; 
 import React from "react";
 const VideoTitle = ({ movieId, title, overview }) => {
   useMovieLogo({ movieId });
